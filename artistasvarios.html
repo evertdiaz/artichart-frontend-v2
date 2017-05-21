@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="assets/css/lightbox.min.css" type="text/css">
         <link rel="stylesheet" href="assets/css/smoothproducts.css" type="text/css">
         <link rel="stylesheet" href="assets/css/animate.css" type="text/css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="assets/rs-plugin/css/settings.css" media="screen" />
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -80,6 +81,44 @@
             }
             .padding-artist{
                     margin-top: 25px;
+            }
+
+
+            .card{
+                border: 2px #f1f0f0 solid;
+                display: inline-block;
+                margin-bottom: 40px;
+            }
+            .card img{
+                width:15%;
+                border-radius: 10%;
+                margin: 5% 0px 5% 5%;
+            }
+            .card div{
+                padding: 5px;
+                width: 80%;
+                float: right;
+                display: inline-block;
+            }
+            .card h6, .company span{
+                display: inline-block;
+                float: left;
+            }
+            .card h6{
+                margin-top: 0px;
+                margin-right: 5px;
+            }
+            .card span{
+                font-size: 13px;
+                font-weight: 700;
+                color: @light-grey;
+            }
+            .card p{
+                margin-top: 10px;
+                font-family: 'Raleway', sans-serif;
+                font-size: 13px;
+                color: @light-grey;
+                letter-spacing: 1px;
             }
         </style>
 <!--
@@ -344,7 +383,7 @@
                     
                     <div class=" no-margin">
                         <h3>ARTES VISUALES</h3>
-                        <h5>DISEÑO</h5>
+                        <h5>VARIOS</h5>
                         <nav class="pagination no-margin">
                             <div class="sorting no-margin">
                                 <a class="drop-toggle-2" href="#">Default sorting
@@ -358,109 +397,78 @@
                             </div>
                             <p>Showing 1-9 of 15 results</p>
                         </nav>
-                        <div class="isotope margin">
-                        <div class="item col-3 art isotope-info">
-                            <img class="img-responsive" src="http://placehold.it/600x400" alt=""/>
-                            <div class="hover-info">
-                                <div class="infobox-3">
-                                    <hr/>
-                                    <h4>project 01</h4>
-                                    art
+                        
+                    </div>
+                    <div class="container">
+                    <div class="row">
+                        <div class="lowerpad">
+                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                <div class="card">
+                                    <img src="http://placehold.it/180x180" alt=""/>
+                                    <div>
+                                        <h6>Jack Blake</h6><span>- Example company</span>
+                                        <br>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <br>
+                                        <h6><i class="fa fa-users" aria-hidden="true"></i> 904 Seguidores</h6>
+                                        <h6><i class="fa fa-trophy" aria-hidden="true"></i> 2.4K Apreciaciones</h6>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item col-3 brand isotope-info">
-                            <img class="img-responsive" src="http://placehold.it/600x400" alt=""/>
-                            <div class="hover-info">
-                                <div class="infobox-3">
-                                    <hr/>
-                                    <h4>project 02</h4>
-                                    brand
+                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                <div class="card">
+                                    <img src="http://placehold.it/180x180" alt=""/>
+                                    <div>
+                                        <h6>Jack Blake</h6><span>- Example company</span>
+                                        <br>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <br>
+                                        <h6><i class="fa fa-users" aria-hidden="true"></i> 904 Seguidores</h6>
+                                        <h6><i class="fa fa-trophy" aria-hidden="true"></i> 2.4K Apreciaciones</h6>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item col-3 business isotope-info">
-                            <img class="img-responsive" src="http://placehold.it/600x400" alt=""/>
-                            <div class="hover-info">
-                                <div class="infobox-3">
-                                    <hr/>
-                                    <h4>project 03</h4>
-                                    business
+                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                <div class="card">
+                                    <img src="http://placehold.it/180x180" alt=""/>
+                                    <div>
+                                        <h6>Jack Blake</h6><span>- Example company</span>
+                                        <br>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <br>
+                                        <h6><i class="fa fa-users" aria-hidden="true"></i> 904 Seguidores</h6>
+                                        <h6><i class="fa fa-trophy" aria-hidden="true"></i> 2.4K Apreciaciones</h6>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item col-3 identity isotope-info">
-                            <img class="img-responsive" src="http://placehold.it/600x400" alt=""/>
-                            <div class="hover-info">
-                                <div class="infobox-3">
-                                    <hr/>
-                                    <h4>project 04</h4>
-                                    identity
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-3 art business isotope-info">
-                            <img class="img-responsive" src="http://placehold.it/600x400" alt=""/>
-                            <div class="hover-info">
-                                <div class="infobox-3">
-                                    <hr/>
-                                    <h4>project 05</h4>
-                                    art, business
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-3 brand identity isotope-info">
-                            <img class="img-responsive" src="http://placehold.it/600x400" alt=""/>
-                            <div class="hover-info">
-                                <div class="infobox-3">
-                                    <hr/>
-                                    <h4>project 06</h4>
-                                    brand,identity
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-3 art identity isotope-info">
-                            <img class="img-responsive" src="http://placehold.it/600x400" alt=""/>
-                            <div class="hover-info">
-                                <div class="infobox-3">
-                                    <hr/>
-                                    <h4>project 07</h4>
-                                    art, identity
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-3 brand business isotope-info">
-                            <img class="img-responsive" src="http://placehold.it/600x400" alt=""/>
-                            <div class="hover-info">
-                                <div class="infobox-3">
-                                    <hr/>
-                                    <h4>project 08</h4>
-                                    brand, business
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-3 art identity isotope-info">
-                            <img class="img-responsive" src="http://placehold.it/600x400" alt=""/>
-                            <div class="hover-info">
-                                <div class="infobox-3">
-                                    <hr/>
-                                    <h4>project 07</h4>
-                                    art, identity
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-3 brand business isotope-info">
-                            <img class="img-responsive" src="http://placehold.it/600x400" alt=""/>
-                            <div class="hover-info">
-                                <div class="infobox-3">
-                                    <hr/>
-                                    <h4>project 08</h4>
-                                    brand, business
+                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                <div class="card">
+                                    <img src="http://placehold.it/180x180" alt=""/>
+                                    <div>
+                                        <h6>Jack Blake</h6><span>- Example company</span>
+                                        <br>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <a class="button-3 button-round button-xsmall  push-left" href="#"> CIRCLE</a>
+                                        <br>
+                                        <h6><i class="fa fa-users" aria-hidden="true"></i> 904 Seguidores</h6>
+                                        <h6><i class="fa fa-trophy" aria-hidden="true"></i> 2.4K Apreciaciones</h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
                     <nav class="pagination">
                         <a class="prev" href="#"></a>
                         <a class="next" href="#"></a>
@@ -470,6 +478,7 @@
             </div>
          
             </section>
+                
             <!-- ============  END ================== -->
             <!-- =============== FOOTER ============ -->
             <footer id="footer">
