@@ -80,7 +80,7 @@
                 jQuery(this).siblings('div').slideToggle();
             });
             /* ============= TABS ===============*/
-            jQuery('.select-table > nav a').on('click', function(event){
+            jQuery('.select-table > div li a').on('click', function(event){
                 event.preventDefault();
                 var id = '#' + jQuery(this).parents('.select-table').attr('id');
                 jQuery(id + ' li.active').toggleClass('active');
