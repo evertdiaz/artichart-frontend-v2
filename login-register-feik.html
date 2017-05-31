@@ -218,7 +218,7 @@
             color: white;
             font-weight: 100;
             font-size: 12px;
-            margin-left: 7px;
+            margin-left: 2px;
         }
 
         </style>
@@ -228,7 +228,26 @@
         $( "#foo" ).removeClass( className );
         -->
         <script type="text/javascript">
-            $( window ).load(function() {
+            
+        (function(jQuery) {
+            'use strict';
+            jQuery(document).ready(function() {
+                $( window ).load(function() {
+
+                jQuery('.select-table > div li a').on('click', function(event){
+                event.preventDefault();
+                var id = '#' + jQuery(this).parents('.select-table').attr('id');
+                jQuery(id + ' li.active').toggleClass('active');
+                jQuery(this).parent('li').toggleClass('active');
+                jQuery(id + ' ' + jQuery(this).attr('href')).toggleClass('active');
+            });
+
+        })
+            })(jQuery);
+        </script>
+        <script type="text/javascript">
+            
+
                 $("#suscripciones").hide();
                 $('#suscripciones-tab').click(function (e) {
                     e.preventDefault();
@@ -567,7 +586,7 @@
         <script src="assets/js/plugins.js"></script>
         <script src="assets/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
         <script src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/scriptslogin.js"></script>
         <!-- ======== /OTHER SCRIPTS ======== -->
     </body>
 </html>
