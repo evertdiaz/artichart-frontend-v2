@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hilld - shared on themelock.com</title>
+		<title>Profile Project</title>
 		<!-- ======== META TAGS ======== -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="utf-8">
@@ -86,43 +86,6 @@
 		} else {
 		$( "#foo" ).removeClass( className );
 		-->
-		<script type="text/javascript">
-		$( window ).load(function() {
-			tag = ""
-			notag = ""
-			console.log(localStorage.getItem("select_tag"))
-			console.log(localStorage.getItem("noselect_tag"))
-			if(localStorage.getItem("select_tag") == null){
-				localStorage.setItem("select_tag", "suscripciones");
-				localStorage.setItem("noselect_tag", "tendencias");
-				select = localStorage.getItem("select_tag")
-				noselect = localStorage.getItem("noselect_tag")
-				$("#tendencias").hide();
-			}else{
-				select = localStorage.getItem("select_tag")
-				noselect = localStorage.getItem("noselect_tag")
-			}
-			console.log(noselect+' li')
-			console.log(select)
-		$('#li-'+noselect).removeClass();
-			$('#li-'+select).addClass('active');
-			$('#'+noselect).hide();
-			$('#'+select).show();
-		$('#suscripciones-tab').click(function (e) {
-		e.preventDefault();
-		localStorage.setItem("select_tag", "suscripciones");
-		localStorage.setItem("noselect_tag", "tendencias");
-		location.reload();
-		});
-		$('#tendencias-tab').click(function (e) {
-		e.preventDefault();
-		localStorage.setItem("select_tag", "tendencias");
-		localStorage.setItem("noselect_tag", "suscripciones");
-		location.reload();
-		});
-		});
-		
-		</script>
 	</head>
 	<body >
 		<div id="wrapper-1">
@@ -341,40 +304,29 @@
                 </section>
             </header>
 			<!-- ========= END ========= -->
-			<section class="section-bar-3 section-margin">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-9 subpage subpage-right">
-							<div class="full-width-2">
-								<img src="http://placehold.it/800x470" alt=""/>
-							</div>
-						</div>
-						<aside class="col-md-3 sidebar">
-							<div style="text-align: center;" >
-								<img src="http://placehold.it/250x250" alt=""/>
-							</div>
-							<div style="text-align: center;" >
-								<div class="col-lg-12 col-sm-12 col-xs-12"> 
-								<h5>MANUEL GÁLVEZ ESPINOZA</h5>
-								<label><i class="fa fa-users fa-2x" aria-hidden="true"></i> 904 &nbsp;&nbsp;Seguidores</label>&nbsp;&nbsp;&nbsp;&nbsp;
-								<label><i class="fa fa-trophy fa-2x" aria-hidden="true"></i> 2.4K &nbsp;&nbsp;Apreciaciones</label>
-								</div>
-								<div class="col-lg-12 col-sm-12 col-xs-12">
-									<a  style="width: 100%;" class="button-3 button-round button-xsmall push-left" href="#">
-										<i class="fa fa-pencil-square-o fa-2x fa-fw" aria-hidden="true"></i>
-									Editar Perfil</a>
-								</div>
-								<div class="col-lg-12 col-sm-12 col-xs-12">
-									<a style="width: 100%;" class="button-3 button-round button-xsmall  push-left" href="#">
-										<i class="fa fa-cloud-upload  fa-2x fa-fw" aria-hidden="true"></i>
-									Agregar Trabajo</a>
-								</div>
-							</div>
-							
-						</aside>
-					</div>
-				</div>
-			</section>
+			
+			<section class="section-bar-1" style="padding-bottom: 20px !important; padding-top: 20px !important">
+                <div class="container">
+                    <div class="callout-box-1" style="display: -webkit-box; display: -moz-box;
+									display: -ms-flexbox; display: -webkit-flex; display: flex; align-items: center;
+									">
+                        <div class="box-text">
+                            <h4>Proyecto mural abstracto,<br>
+							Miraflores.</h4>
+							<p>Artes visuales, Pintura</p>
+                        </div>
+                        <div class="box-text-2" style="right: 0px; position:absolute;" >
+									<div style="margin-right: 3px;">
+										<a href="#" style="margin-right: 10px;" ><i class="fa fa-trash fa-4x" aria-hidden="true"></i></a>
+										<a href="#" ><i class="fa fa-pencil-square-o fa-4x" aria-hidden="true" ></i></a>
+									</div>
+									
+								
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 			<section class="section section-margin">
 				<div class="container">
 					<div class="row">
